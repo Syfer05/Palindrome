@@ -4,20 +4,19 @@ vrai="It's a palindrome"
 faux="Sad, that's a regular word"
 
 mot = input("Enter your word: ")
-tableau =[]
+tableau = []
 longueur = len(mot)
 milieu = longueur//2
 tableau = list(mot)
 
-if longueur%2!=0:       
-    print(milieu)
+""" Suppresion du caractere du milieu en cas de mot impair """
+if longueur%2!=0: 
     del tableau[milieu]
-print(tableau)
     
  
 alpha=tableau[0:milieu]
-bravo=tableau[-milieu:]
-bravo.reverse() 
+""" slicing is reversed """
+bravo=tableau[:milieu-1:-1]
 print(alpha, bravo)
 
 if alpha == bravo:
