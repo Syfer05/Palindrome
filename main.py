@@ -1,4 +1,4 @@
-# Palindrome
+# Palindrome by
 
 vrai="It's a palindrome"
 faux="Sad, that's a regular word"
